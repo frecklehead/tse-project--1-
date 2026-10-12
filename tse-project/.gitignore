@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+runs/
+results/
+pretrained/
+*.pt
+*.tar
+*.tar.gz
+*.zip

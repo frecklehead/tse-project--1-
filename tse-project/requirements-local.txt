@@ -1,0 +1,24 @@
+# requirements-local.txt -- for your LAPTOP (CPU only, no training)
+#
+# Used for: sanity_check.py, small smoke tests, evaluate.py, infer.py, CPU speed benchmark.
+# Training is done on Google Colab (see requirements.txt).
+#
+# Usage:   pip install -r requirements-local.txt
+#
+# On Linux, to avoid the large CUDA download, install the CPU build of PyTorch first:
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+# On Windows / macOS plain "pip install torch" already gives a CPU build.
+
+torch
+torchaudio
+speechbrain
+numpy
+scipy
+soundfile
+tqdm
+pystoi
+pandas
+pytest
+
+# PESQ is optional on the laptop (needs a C compiler to build). Skip it if it fails:
+# pesq

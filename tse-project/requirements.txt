@@ -1,0 +1,14 @@
+# requirements.txt  -- for GOOGLE COLAB (training)
+#
+# Do NOT list torch / torchaudio / numpy / scipy here.
+# Colab already ships a GPU (CUDA) build of PyTorch, torchaudio, numpy and scipy.
+# Reinstalling them can replace the CUDA build or break Colab's other packages.
+#
+# Usage in a Colab cell:   !pip install -q -r requirements.txt
+
+speechbrain      # pretrained ECAPA-TDNN speaker encoder
+soundfile        # read / write wav and flac
+tqdm             # progress bars
+pystoi           # STOI metric
+pesq             # PESQ metric (builds a small C extension; fine on Colab)
+pandas           # reading log.csv and results (already on Colab; harmless)
